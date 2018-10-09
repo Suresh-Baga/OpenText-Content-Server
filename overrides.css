@@ -1,0 +1,327 @@
+/* Put a green pattern on the page background */
+body.binf-widgets {
+  /* background: linear-gradient(to bottom, #00714b 0%, #00d8a4 100%); */
+  background-image: url(images/damaskus.pattern.jpg);
+  background-repeat: repeat;
+}
+
+/* Make breadcrumb background green-ish */
+.binf-widgets .binf-breadcrumb {
+  background-color: #ebf4f1;
+}
+
+/* Make icon for node type 141 green */
+.csui-icon-enterprise-volume {
+  background-image: url(images/enterprise.volume.svg);
+}
+
+/* Make icon for node type 142 green */
+.csui-icon-personal-volume {
+  background-image: url(images/personal.volume.svg);
+}
+
+/* Replace icon for node type 202 */
+.csui-icon-project {
+  background-image: url(images/project.svg);
+}
+
+/* Force tile titles to use uppercase letter case */
+.binf-widgets .tile-title h4 {
+  text-transform: uppercase;
+}
+
+/* Replace icon for favourites tile header */
+.title-favourites {
+  background-image: url(images/favourites.png);
+}
+
+/* Replace icon for favourite object marking */
+.icon-socialFav {
+  background-image: url(images/favourite.svg);
+}
+.icon-socialFavOpen {
+  background-image: url(images/not.favourite.svg);
+}
+
+/* Make user photo placeholder green */
+.image_user_placeholder {
+  background-image: url(images/user.photo.placeholder.svg);
+}
+
+/* Make user group icon green */
+.image_group_placeholder {
+  background-image: url(images/user.group.svg);
+}
+
+/* Make help button green */
+.icon-help {
+  background-image: url(images/help.svg);
+}
+.icon-help:hover {
+  background-image: url(images/help.hovered.svg);
+}
+.icon-help:active {
+  background-image: url(images/help.active.svg);
+}
+
+/* Make search button green, when search perspective is shown */
+.icon-header-search_enabled {
+  background-image: url(images/search.activated.svg);
+}
+.icon-header-search_enabled:hover,
+.icon-header-search_enabled:focus {
+  background-image: url(images/search.activated.hovered.svg);
+}
+
+/* Make table row background green-ish when hovered above */
+.csui-nodetable .binf-table tbody > tr.csui-state-hover {
+  background-color: #bacec9;
+}
+
+/* Reduce unused space on left and right sides of the screen */
+.binf-widgets .cs-perspective-panel > .cs-perspective,
+#breadcrumb-wrap {
+  padding-left: 33px;
+  padding-right: 33px;
+}
+	
+/* Replace company logo image */
+.binf-navbar .binf-navbar-brand .csui-logo .csui-logo-image {
+  background-image: url(images/alberi.company.logo.png);
+  height: 38px;
+  width: 144px;
+}
+
+/* Prevent company logo from hiding, when the search box is expanded */
+.binf-navbar-brand.binf-collapse {
+  display: block;
+  visibility: visible;
+}
+
+/* Move company logo to the left */
+.binf-navbar .binf-navbar-brand .csui-logo {
+  position: absolute;
+  top: 0;
+  left: 33px;
+}
+
+/* Move home button to the right of the company logo */
+.binf-navbar .binf-navbar-nav .csui-home-item {
+  position: absolute;
+  top: 2px;
+  left: 200px;
+  /* Do not stay below the collapsed search button space */
+  z-index: 1;
+}
+
+/* Move breadcrumb button to the right of the home button */
+.binf-navbar .binf-navbar-nav .tile-breadcrumb {
+  position: absolute;
+  top: 2px;
+  left: 267px;
+  /* Do not stay below the collapsed search button space */
+  z-index: 1;
+}
+
+/* Fix breadcrumb moved too low from the navbar */
+#breadcrumb-wrap.breadcrumb-wrap-visible {
+  transform: translateY(47px);
+}
+
+/* Move help button to the right */
+.binf-navbar .binf-navbar-nav .csui-help {
+  position: absolute;
+  top: 0;
+  right: 18px;
+}
+
+/* Move user profile button to the left of the help button */
+.binf-navbar .binf-navbar-nav .csui-profile {
+  position: absolute;
+  top: 0;
+  right: 90px;
+}
+
+/* Move search button to the left of the user profile button */
+.binf-navbar .binf-navbar-nav .csui-search {
+  position: absolute;
+  top: 0;
+  right: 157px;
+  /* Stretch to the left and stop in front of the company logo */
+  width: calc(100% - 402px);
+}
+
+/* Cover home and breadcrumb buttons, when expanded */
+.binf-navbar .binf-navbar-nav .search-bar-content {
+  z-index: 2;
+}
+
+/* Make header of list and shortcut tiles grey */
+.cs-shortcut .tile-header,
+.cs-list .tile-header,
+.cs-list .tile-footer {
+  background-color: #f7f7f7;
+}
+
+/* Make body of list tiles white */
+.cs-list .tile-content,
+.cs-list .tile-content .binf-list-group-item {
+  background-color: #ffffff;
+}
+
+/* Make question alert box heacer green */
+.csui-alert .question-header {
+  background-color: #00714b;
+  color: #ffffff;
+}
+
+/* Make default modal alert buttons green and square */
+.binf-widgets .binf-btn-primary {
+  background-color: #33b77a;
+  border-color: #2ea46d;
+  border-radius: 2px;
+}
+.csui-alert .binf-modal-footer .binf-btn {
+  border-radius: 2px;
+}
+.csui-alert .binf-modal-footer .binf-btn-default {
+  border-color: #33b77a;
+  color: #33b77a;
+  border-radius: 2px;
+}
+
+/* Make default modal dialog buttons green and square */
+.binf-modal-footer .binf-btn-default {
+  border-radius: 2px;
+  border-color: #00aa72;
+  color: #00aa72;
+}
+.binf-modal-footer .binf-btn-default:focus {
+  background-color: #00aa72;
+  border-color: #00aa72;
+}
+.binf-modal-footer .binf-btn-default:hover {
+  background-color: #00aa72;
+}
+.binf-modal-footer .binf-btn-default:active {
+  background-color: #00714b;
+}
+.binf-modal-footer .binf-btn-primary {
+  background-color: #00aa72;
+  border-radius: 2px;
+}
+.binf-modal-footer .binf-btn-primary:focus {
+  background-color: #00aa72;
+  border-color: #00aa72;
+}
+.binf-modal-footer .binf-btn-primary:hover {
+  color: #00aa72;
+  border-color: #00aa72;
+}
+.binf-modal-footer .binf-btn-primary:active {
+  background-color: #00714b;
+}
+.cs-dialog .binf-modal-footer .binf-btn,
+.esoc-user-text-edit-buttons .binf-btn {
+  border-radius: 2px;
+}
+.cs-dialog .binf-modal-footer .binf-btn-default:active,
+.cs-dialog .binf-modal-footer .binf-btn-default,
+.esoc-user-text-edit-buttons .binf-btn-default:active,
+.esoc-user-text-edit-buttons .binf-btn-default {
+  border: 1px solid #00aa72;
+  color: #00aa72;
+}
+.cs-dialog .binf-modal-footer .binf-btn-default:focus,
+.esoc-user-text-edit-buttons .binf-btn-default:focus {
+  border: 1px solid #00714b;
+  color: #00aa72;
+}
+.cs-dialog .binf-modal-footer .binf-btn-default:hover,
+.esoc-user-text-edit-buttons .binf-btn-default:hover {
+  border: 1px solid #00714b;
+  color: #00714b;
+}
+.cs-dialog .binf-modal-footer .binf-btn-primary,
+.cs-dialog .binf-modal-footer .binf-btn-primary:active,
+.esoc-user-text-edit-buttons .binf-btn-primary,
+.esoc-user-text-edit-buttons .binf-btn-primary:active {
+  background-color: #00aa72;
+}
+.cs-dialog .binf-modal-footer .binf-btn-primary:hover,
+.esoc-user-text-edit-buttons .binf-btn-primary:hover {
+  background-color: #00714b;
+}
+.cs-dialog .binf-modal-footer .binf-btn-primary:focus,
+.esoc-user-text-edit-buttons .binf-btn-primary:focus {
+  background-color: #00aa72;
+}
+
+/* Make inline form buttons green and square */
+.csui-inlineform-group > input {
+  border: 1px solid #a7aca9;
+  border-radius: 2px;
+}
+.csui-inlineform-group .csui-btn.binf-btn {
+  border-color: #00aa72;
+  color: #00aa72;
+  border-radius: 2px;
+}
+.csui-inlineform-group .csui-btn.binf-btn:hover {
+  color: #00714b;
+  border-color: #00714b;
+}
+.csui-inlineform-group .csui-btn.binf-btn.binf-btn-default {
+  background-color: #00aa72;
+}
+.csui-inlineform-group .csui-btn.binf-btn.binf-btn-default:hover {
+  background-color: #00714b;
+}
+
+/* Make tab link underlining green */
+.binf-widgets .cs-metadata-properties .binf-nav-pills > li.binf-active > a > .cs-tablink-text,
+.binf-widgets .cs-metadata-properties .binf-nav-pills > li.binf-active > a:hover > .cs-tablink-text {
+  border-color: #00aa72;
+}
+
+/* Make toolbar button background green-ish when hovered above */
+.binf-widgets .csui-tabletoolbar .binf-nav > li > a:hover {
+  background-color: #bacec9;
+}
+.binf-widgets .csui-tabletoolbar .binf-nav > li > a:active {
+  background-color: #dfeae7;
+}
+
+/* Make unreserving icons in the node state column green */
+.icon-reserved_self {
+  background-image: url(images/reserved.own.svg);
+}
+.icon-reserved_self_mo {
+  background-image: url(images/reserved.own.disabled.svg);
+}
+.icon-reserved_self_md {
+  background-image: url(images/reserved.own.hovered.svg);
+}
+
+/* Make attribute-adding icon green */
+.circle_add {
+  background-image: url(images/circular.add.svg);
+}
+.circle_add_2 {
+  background-image: url(images/circular.add.bigger.svg);
+}
+
+/* Make dropdown menu item green when hovered above */
+.binf-widgets .binf-dropdown-menu > .binf-active > a,
+.binf-widgets .binf-dropdown-menu > .binf-active > a:hover,
+.binf-widgets .binf-dropdown-menu > .binf-active > a:focus {
+  background-color: #33b77a;
+}
+
+/* Make signing page button green */
+.cs-signin .login-btn-enabled {
+  color: #00d8a4;
+}
+.cs-signin .binf-form-control:focus {
+  border-color: #00714b;
+}
