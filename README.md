@@ -5,4 +5,4 @@ Place these files in any folder under support directory and configure the url fo
 
 Save the changes
 
-Now you should updated UI of your Content Server
+Now you should see updated UI of your Content Server
